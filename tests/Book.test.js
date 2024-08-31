@@ -4,14 +4,14 @@ describe('Book', () => {
   let book;
 
   beforeEach(() => {
-    book = new Book('123', 'Effective JavaScript', 'David Herman', 2012);
+    book = new Book('123', 'Rich Dad Poor Dad', 'Robert T. Kiyosaki', 1997);
   });
 
   test('should create a book with correct properties', () => {
     expect(book.isbn).toBe('123');
-    expect(book.title).toBe('Effective JavaScript');
-    expect(book.author).toBe('David Herman');
-    expect(book.publicationYear).toBe(2012);
+    expect(book.title).toBe('Rich Dad Poor Dad');
+    expect(book.author).toBe('Robert T. Kiyosaki');
+    expect(book.publicationYear).toBe(1997);
     expect(book.isAvailable).toBe(true);
   });
 
