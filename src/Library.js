@@ -24,6 +24,14 @@ class Library {
           throw new Error('Book not found');
         }
       }
+
+      viewAvailableBooks() {
+        return this.books.filter(book => book.isAvailable);
+      }
+    
+      findBookByIsbn(isbn) {
+        return this.books.find(book => book.isbn === isbn);
+      }
   }
   
   module.exports = Library;
