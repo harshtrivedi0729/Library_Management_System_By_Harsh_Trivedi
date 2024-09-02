@@ -47,4 +47,5 @@ describe('Library', () => {
     expect(availableBooks.length).toBe(1);
     expect(availableBooks[0].title).toBe('The Intelligent Investor');
   });
+  
 });

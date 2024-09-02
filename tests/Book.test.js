@@ -30,4 +30,5 @@ describe('Book', () => {
     book.returnBook();
     expect(book.isAvailable).toBe(true);
   });
+  
 });
